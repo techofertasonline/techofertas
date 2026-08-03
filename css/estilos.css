@@ -213,3 +213,36 @@ footer{
     color:#0077ff;
     margin-bottom:15px;
 }
+
+/* ===== FOOTER ===== */
+
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:25px 15px;
+    margin-top:40px;
+}
+
+.footer-links{
+    margin-top:15px;
+}
+
+.footer-links a{
+    color:#d1d5db;
+    text-decoration:none;
+    margin:0 12px;
+    font-size:15px;
+    transition:0.3s;
+}
+
+.footer-links a:hover{
+    color:#3b82f6;
+}
+
+.footer-afiliados{
+    margin-top:15px;
+    font-size:14px;
+    color:#9ca3af;
+    line-height:1.6;
+}
