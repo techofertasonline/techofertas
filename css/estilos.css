@@ -84,13 +84,13 @@ nav a{
 }
 
 .btn{
+    display:inline-block;
     background:#3b82f6;
     color:white;
     text-decoration:none;
     padding:15px 30px;
     border-radius:8px;
     font-weight:bold;
-
     transition:.3s;
 }
 
@@ -100,14 +100,6 @@ nav a{
 
 .hero p{
     margin-bottom:30px;
-}
-
-.btn{
-    background:#0077ff;
-    color:white;
-    text-decoration:none;
-    padding:12px 25px;
-    border-radius:6px;
 }
 
 .productos{
@@ -120,6 +112,12 @@ nav a{
     font-size:40px;
 }
 
+.productos h1{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:25px;
+}
+
 .contenedor-productos{
     display:flex;
     justify-content:center;
@@ -129,16 +127,17 @@ nav a{
 
 .tarjeta{
     width:300px;
-    background:white;
+    background:#fff;
     padding:25px;
-    border-radius:12px;
-    box-shadow:0 5px 15px rgba(0,0,0,.1);
-
-    transition:.3s;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.10);
+    transition:all .3s ease;
+    overflow:hidden;
 }
 
 .tarjeta:hover{
     transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(0,0,0,.18);
 }
 
 .tarjeta h3{
@@ -151,11 +150,20 @@ nav a{
 
 .tarjeta a{
     display:inline-block;
-    background:#3b82f6;
+    width:100%;
+    text-align:center;
+    background:#ff9900;
     color:white;
     text-decoration:none;
-    padding:10px 20px;
-    border-radius:6px;
+    padding:12px 20px;
+    border-radius:8px;
+    font-weight:bold;
+    transition:all .3s ease;
+}
+
+.tarjeta a:hover{
+    background:#e68a00;
+    transform:scale(1.03);
 }
 
 @media(max-width:768px){
@@ -188,18 +196,13 @@ nav a{
     width:100%;
     height:220px;
     object-fit:cover;
-
-    border-radius:8px;
-
+    border-radius:10px;
     margin-bottom:15px;
+    transition:transform .4s ease;
 }
 
-footer{
-    background:#111827;
-    color:white;
-    text-align:center;
-    padding:25px;
-    margin-top:50px;
+.tarjeta:hover img{
+    transform:scale(1.06);
 }
 
 .estrellas{
@@ -245,4 +248,239 @@ footer{
     font-size:14px;
     color:#9ca3af;
     line-height:1.6;
+}
+
+/* ===== AVISO DE AFILIADOS ===== */
+
+.aviso-afiliado{
+    max-width:900px;
+    margin:40px auto;
+    padding:15px 20px;
+    background:#f3f4f6;
+    border-left:4px solid #3b82f6;
+    color:#555;
+    font-size:14px;
+    line-height:1.6;
+}
+
+/* Descripción de la página de productos */
+
+.descripcion-productos{
+    max-width: 800px;
+    margin: 15px auto 35px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #555;
+    padding: 0 20px;
+}
+
+/* ===== Etiquetas de productos ===== */
+
+.tarjeta{
+    position:relative;
+}
+
+.etiqueta{
+    position:absolute;
+    top:15px;
+    left:15px;
+    color:white;
+    font-size:13px;
+    font-weight:bold;
+    padding:6px 12px;
+    border-radius:20px;
+    z-index:10;
+}
+
+.oferta{
+    background:#e63946;
+}
+
+.vendido{
+    background:#ff9800;
+}
+
+.recomendado{
+    background:#2e7d32;
+}
+
+/* ===== ¿Por qué elegir TechOfertas? ===== */
+
+.porque-techofertas{
+    padding:80px 20px;
+    background:#f8fafc;
+    text-align:center;
+}
+
+.porque-techofertas h2{
+    font-size:38px;
+    margin-bottom:50px;
+    color:#111827;
+}
+
+.ventajas{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.ventaja{
+    background:white;
+    width:320px;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:all .3s ease;
+}
+
+.ventaja:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+}
+
+.ventaja h3{
+    margin-bottom:15px;
+    color:#0077ff;
+}
+
+.ventaja p{
+    color:#555;
+    line-height:1.7;
+}
+
+/* Categoría de artículos del blog */
+
+.categoria-blog{
+    color:#3b82f6;
+    font-size:14px;
+    font-weight:bold;
+    margin:10px 0 15px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+/* Llamado a la acción del Blog */
+
+.blog-cta{
+    max-width:800px;
+    margin:60px auto 20px;
+    text-align:center;
+    padding:40px 20px;
+    background:#f3f4f6;
+    border-radius:15px;
+}
+
+.blog-cta h2{
+    margin-bottom:15px;
+    font-size:32px;
+}
+
+.blog-cta p{
+    margin-bottom:25px;
+    color:#555;
+    line-height:1.7;
+}
+
+/* Descripción del Blog */
+
+.descripcion-blog{
+    max-width:850px;
+    margin:20px auto 45px;
+    text-align:center;
+    font-size:18px;
+    color:#555;
+    line-height:1.8;
+    padding:0 20px;
+}
+
+/* ===== Artículos del Blog ===== */
+
+.imagen-articulo{
+    display:block;
+    width:100%;
+    max-width:600px;
+    margin:40px auto;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+/* ===== CONTENIDO DEL ARTÍCULO ===== */
+
+.contenido-articulo{
+    max-width:900px;
+    margin:60px auto;
+    padding:0 20px;
+}
+
+.contenido-articulo h2{
+    font-size:52px;
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.contenido-articulo p{
+    font-size:20px;
+    line-height:1.9;
+    color:#444;
+    margin-bottom:25px;
+}
+
+/* Lista del artículo */
+
+.contenido-articulo ul{
+    margin:25px 0;
+    padding-left:30px;
+}
+
+.contenido-articulo li{
+    font-size:20px;
+    line-height:1.9;
+    color:#444;
+    margin-bottom:12px;
+}
+
+/* Subtítulos dentro del artículo */
+
+.contenido-articulo h3{
+    font-size:28px;
+    margin-top:40px;
+    margin-bottom:20px;
+    color:#111827;
+}
+
+/* ===== Tabla de especificaciones ===== */
+
+.tabla-especificaciones{
+    width:100%;
+    max-width:900px;
+    margin:40px auto;
+    border-collapse:collapse;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.tabla-especificaciones th{
+    background:#111827;
+    color:#fff;
+    padding:16px;
+    text-align:left;
+}
+
+.tabla-especificaciones td{
+    padding:15px;
+    border-bottom:1px solid #e5e7eb;
+}
+
+.tabla-especificaciones tr:nth-child(even){
+    background:#f8fafc;
+}
+
+.tabla-especificaciones tr:hover{
+    background:#eef4ff;
+}
+
+.productos > h2{
+    margin-top:50px;
+    margin-bottom:30px;
 }
